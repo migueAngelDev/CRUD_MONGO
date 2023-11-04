@@ -13,10 +13,12 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.15",
     "@svgr/webpack": "^8.1.0",
+    "dotenv": "^16.3.1",
     "mongoose": "^7.6.3",
     "next": "14.0.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "vercel": "^32.5.0"
   },
   "devDependencies": {
     "eslint": "^8",
