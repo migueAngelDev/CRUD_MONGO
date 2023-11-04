@@ -1,0 +1,22 @@
+.TableProducts {
+  overflow-x: auto;
+  padding: 30px 0;
+}
+
+.tableDataProduct {
+  border: 1px solid #fff;
+  width: 100vw;
+  min-width: 1250px;
+  /* min-height: 100vh; */
+  overflow-x: auto;
+  padding: 10px 30px;
+}
+
+.tableDataProduct tbody tr td {
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.tableDataProduct tbody tr:nth-child(even) {
+  background-color: #ffffff43;
+}

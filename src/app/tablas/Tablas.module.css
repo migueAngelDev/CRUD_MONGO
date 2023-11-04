@@ -1,0 +1,20 @@
+.containerTables {
+  padding: 20px;
+  display: grid;
+  min-height: calc(100vh - 200px);
+  text-align: center;
+  place-items: center;
+}
+
+.containerTables h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.groupTables {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  width: 100%;
+}

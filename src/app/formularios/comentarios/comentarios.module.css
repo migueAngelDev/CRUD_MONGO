@@ -1,0 +1,26 @@
+.wrapperFormProducts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+}
+
+.formProducts {
+  background-color: #fff6ef;
+  min-height: 50vh;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 20px;
+  color: #000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+
+.field {
+  width: 100%;
+}

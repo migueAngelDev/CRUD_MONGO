@@ -1,0 +1,47 @@
+.main {
+  width: 90vw;
+  /* border: 1px solid #ccc; */
+  margin: 0 auto;
+  min-height: calc(100vh - 250px);
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.stOne {
+  border: 1px solid #ccc;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.stOne h2 {
+  font-size: 3rem;
+  color: linear-gradient(180deg, #fff, #adadad);
+}
+
+.stOne p {
+  color: gray;
+  line-height: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.stOne span {
+  color: #fff;
+}
+
+.stOne a {
+  background-color: #fff;
+  color: #000;
+  font-weight: 500 !important;
+  padding: 10px 20px;
+}
+
+.stOne a:hover {
+  background-color: #ffffffe0;
+}

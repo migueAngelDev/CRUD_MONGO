@@ -1,0 +1,42 @@
+.headerPage {
+  border: 1px solid #fff;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.headerPage nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headerPage nav ul {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerPage ul li {
+  list-style: none;
+}
+
+.icon {
+  width: 100px;
+  fill: #fff;
+  stroke: #fff;
+}
+
+.icon path {
+  fill: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .icon {
+    width: 60px;
+  }
+
+  .headerPage nav ul {
+    gap: 30px;
+  }
+}
