@@ -15,7 +15,7 @@ const FormUsers = () => {
     confirmPassword: "",
   });
 
-  const handleOnChange = (field, value) => {
+  const handleOnChange = (value, field) => {
     setNewUser({
       ...newUser,
       [field]: value,
