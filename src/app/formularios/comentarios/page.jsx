@@ -24,7 +24,7 @@ const FormComments = () => {
 
   const createNewComment = async () => {
     const api =
-      "https://crud-mongo-okmziq51v-angel-ton618-hotmailcom.vercel.app/api/users";
+      "https://crud-mongo-okmziq51v-angel-ton618-hotmailcom.vercel.app/api/comments";
     const res = await fetch(api, {
       method: "POST",
       body: JSON.stringify(newComment),
