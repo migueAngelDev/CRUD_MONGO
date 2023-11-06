@@ -1,9 +1,6 @@
 import { connect, connection } from "mongoose";
 // import { MONGODB } from "@/app/config/config";
-
-const MONGODB =
-  "mongodb+srv://vercel-admin-user:futurama@my-mongodb-mobile.o1kbqqc.mongodb.net/?retryWrites=true&w=majority";
-
+const MONGODB = process.env.MONGODB_URI;
 const conn = {
   isConnected: false,
 };
