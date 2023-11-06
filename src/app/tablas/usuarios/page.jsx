@@ -3,7 +3,7 @@ import { connectDB } from "@/utils/mongoose";
 import User from "@/models/User";
 
 const loadUser = async () => {
-  connectDB();
+  await connectDB();
   const users = await User.find();
   return users;
 };
