@@ -3,7 +3,7 @@ import { connectDB } from "@/utils/mongoose";
 import Comment from "@/models/Comment";
 
 const loadComment = async () => {
-  connectDB();
+  // connectDB();
   const comments = await Comment.find();
   return comments;
 };
