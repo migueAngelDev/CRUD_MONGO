@@ -1,19 +1,11 @@
 import styles from "./usuarios.module.css";
-// import { connectDB } from "@/utils/mongoose";
-// import User from "@/models/User";
+import { connectDB } from "@/utils/mongoose";
+import User from "@/models/User";
 
 const loadUser = async () => {
-  try {
-    const endPoint = "https://crud-mongo-nu.vercel.app/api/products";
-    const users = await fetch(endPoint)
-      .then((res) => res.json())
-      .then((users) => users)
-      .catch((err) => console.log(err));
-    return users;
-  } catch (error) {
-    console.log(error);
-    console.log(error.message);
-  }
+  await connectDB();
+  const users = await User.find();
+  return users;
 };
 
 const TableUsers = async () => {
