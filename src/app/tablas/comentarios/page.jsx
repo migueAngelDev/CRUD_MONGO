@@ -2,21 +2,21 @@ import styles from "./comentarios.module.css";
 import { connectDB } from "@/utils/mongoose";
 import Comment from "@/models/Comment";
 
-// const loadComment = async () => {
-// await connectDB();
-// const comments = await Comment.find();
-// return comments;
-// };
-
 const loadComment = async () => {
-  const api = "https://crud-mongo-nu.vercel.app/api/comments";
-  const comments = await fetch(api)
-    .then((res) => res.json())
-    .then((comment) => comment)
-    .catch((err) => console.log(err));
-
+  await connectDB();
+  const comments = await Comment.find();
   return comments;
 };
+
+// const loadComment = async () => {
+//   const api = "https://crud-mongo-nu.vercel.app/api/comments";
+//   const comments = await fetch(api)
+//     .then((res) => res.json())
+//     .then((comment) => comment)
+//     .catch((err) => console.log(err));
+
+//   return comments;
+// };
 
 const TableComments = async () => {
   const comments = await loadComment();
