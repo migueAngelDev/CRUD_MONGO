@@ -5,13 +5,18 @@ const conn = {
 };
 
 export async function connectDB() {
-  if (conn.isConnected) return;
-  const db = await connect(MONGODB, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-  console.log(db.connection.db.databaseName);
-  conn.isConnected = db.connections[0].readyState;
+  try {
+    if (conn.isConnected) return;
+    const db = await connect(MONGODB, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log(db.connection.db.databaseName);
+    conn.isConnected = db.connections[0].readyState;
+  } catch (error) {
+    console.log(error);
+    console.log(error.message);
+  }
 }
 
 connection.on("connected", () => {
