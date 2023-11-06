@@ -1,6 +1,5 @@
 import { connect, connection } from "mongoose";
-// import { MONGODB } from "@/app/config/config";
-const MONGODB = process.env.MONGODB_URI;
+import { MONGODB } from "@/app/config/config";
 const conn = {
   isConnected: false,
 };
