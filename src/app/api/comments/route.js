@@ -3,7 +3,7 @@ import { connectDB } from "@/utils/mongoose";
 import Comment from "@/models/Comment";
 
 export async function GET() {
-  // connectDB();
+  connectDB();
   const comments = await Comment.find();
   return NextResponse.json(comments);
 }
